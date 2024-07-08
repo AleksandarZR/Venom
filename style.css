@@ -1,3 +1,8 @@
+:root {
+    --background-color: rgb(29, 31, 30);
+    --foreground-color: aliceblue;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -25,14 +30,16 @@ h1 {
     perspective: 1px;
     perspective-origin: center center;
     overflow-x: hidden;
+    color: var(--foreground-color);
+    background-color: var(--background-color);
 }
 
-.overflow {
+.info {
     position: absolute;
     width: 100vw;
     height: 80vh;
     top: 100vh;
-    background-color: #FFF;
+    background-color: var(--background-color)
 }
 
 #parallax {
