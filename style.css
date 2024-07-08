@@ -9,42 +9,68 @@
 }
 
 html {
-    overflow-x: hidden;
+    /* max-width: 100vw; */
+    /* overflow-x: hidden; */
 }
 
 body {
-    height: 100%;
-    width: 100%;
+    /* width: 100vw; */
+    /* max-width: 100vw; */
+    /* height: 100%; */
+    /* width: 100%; */
     margin: 0;
     font-family: Helvetica, Sans-serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
     text-align: center;
-  }
+    font-size: 10vw;
+
+    animation-name: pulse;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+@keyframes pulse {
+    0% {
+        text-shadow: rgb(255, 0, 0) 0px 0px 0px;
+        transform: scale(1);
+    }
+
+    50% {
+        text-shadow: rgb(255, 0, 0) 3px 3px 50px;
+        transform: scale(1.2);
+    }
+
+    100% {
+        text-shadow: rgb(255, 0, 0) 0px 0px 0px;
+        transform: scale(1);
+    }
+}
 
 .page {
-    width: 100vw;
+    width: 100%;
+    max-width: 100%;
     height: 100vh;
     perspective: 1px;
     perspective-origin: center center;
     overflow-x: hidden;
+    overflow-y: unset;
     color: var(--foreground-color);
     background-color: var(--background-color);
-}
-
-.info {
-    position: absolute;
-    width: 100vw;
-    height: 80vh;
-    top: 100vh;
-    background-color: var(--background-color)
+    position: relative;
 }
 
 #parallax {
     transform-style: preserve-3d;
-    height: 120vh;
+    height: 100vh;
 }
 
 .layer {
@@ -54,13 +80,16 @@ h1 {
     position: absolute;
     top: 0;
     right: 0;
-    bottom: 0; 
-    left: 0; 
+    bottom: 0;
+    left: 0;
 }
 
 #layer-99 {
     background-image: url('images/layer99.jpg');
-    transform: translate3d(0, -200px, .1px) scale(0.9);
+    transform: translate3d(0, -0px, .1px) scale(0.9);
+    background-size: cover;
+    /* max-height: 100vh; */
+    /* background-position: top center; */
 }
 
 #layer-5 {
@@ -101,8 +130,57 @@ h1 {
 
 #layer-1 {
     background-image: url('images/layer01.png');
-    transform: translate3d(0, 0px, .6px) scale(.5) perspective(700px);
-    background-size: auto;
+    transform: translate3d(0, 120px, .6px) scale(.5);
+    /* transform: translate3d(0, 0px, .6px) scale(.5) perspective(700px); */
+    background-size: cover;
+    /* background-position: top center; */
     /* width: 1005; */
 }
 
+.headline {
+    /* position: absolute; */
+    width: 100%;
+    /* height: 80vh; */
+    /* top: 100vh; */
+    background-color: var(--background-color);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.info {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.text {
+    /* width: 90%; */
+    max-width: 90%;
+    background-color: var(--background-color);
+    color: aliceblue;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+#text1, #text2 {
+    max-width: 90%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 0rem 10vw;
+    line-height: 2.5rem;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 1.5rem;
+}
+
+#text1 {
+    margin-top: 2rem;
+}
+
+#text2 {
+    margin-top: 2rem;
+}
