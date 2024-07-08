@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: Helvetica, Sans-serif;
+    overflow-x: hidden;
+}
+
+h1 {
+    text-align: center;
+  }
+
+.page {
+    width: 100vw;
+    height: 100vh;
+    perspective: 1px;
+    perspective-origin: center center;
+    overflow-x: hidden;
+}
+
+.overflow {
+    position: absolute;
+    width: 100vw;
+    height: 80vh;
+    top: 100vh;
+    background-color: #FFF;
+}
+
+#parallax {
+    transform-style: preserve-3d;
+    height: 120vh;
+}
+
+.layer {
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0; 
+    left: 0; 
+}
+
+#layer-99 {
+    background-image: url('images/layer99.jpg');
+    transform: translate3d(0, -200px, .1px) scale(0.9);
+}
+
+#layer-5 {
+    background-image: url('images/layer05.png');
+    transform: translate3d(0, -50px, .139px) scale(.3);
+    background-position: center right;
+    background-size: auto;
+    top: 100;
+    left: 250;
+}
+
+#layer-4 {
+    background-image: url('images/layer04.png');
+    transform: translate3d(0, -120px, .25px) scale(.4);
+    background-position: center right;
+    background-size: auto;
+    top: 200;
+    left: 20;
+}
+
+#layer-3 {
+    background-image: url('images/layer03.png');
+    transform: translate3d(0, -180px, .45px) scale(0.5);
+    background-position: center right;
+    background-size: auto;
+    top: 100;
+    left: 20;
+}
+
+#layer-2 {
+    background-image: url('images/layer02.png');
+    transform: translate3d(0, -150px, .2px) scale(.5);
+    background-position: center left;
+    background-size: auto;
+    top: 100;
+    left: 10;
+}
+
+#layer-1 {
+    background-image: url('images/layer01.png');
+    transform: translate3d(0, 0px, .6px) scale(.5) perspective(700px);
+    background-size: auto;
+    /* width: 1005; */
+}
+
