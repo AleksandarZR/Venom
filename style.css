@@ -71,6 +71,7 @@ h1 {
 #parallax {
     transform-style: preserve-3d;
     height: 100vh;
+    /* max-height: 100vh; */
 }
 
 .layer {
@@ -86,10 +87,15 @@ h1 {
 
 #layer-99 {
     background-image: url('images/layer99.jpg');
-    transform: translate3d(0, -0px, .1px) scale(0.9);
+    /* transform: translate3d(0, -0px, .1px) scale(0.9); */
     background-size: cover;
     /* max-height: 100vh; */
-    /* background-position: top center; */
+    background-position: fixed;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #layer-5 {
@@ -130,11 +136,36 @@ h1 {
 
 #layer-1 {
     background-image: url('images/layer01.png');
-    transform: translate3d(0, 120px, .6px) scale(.5);
+    transform: translate3d(0, -45px, .6px) scale(.5);
     /* transform: translate3d(0, 0px, .6px) scale(.5) perspective(700px); */
     background-size: cover;
     /* background-position: top center; */
     /* width: 1005; */
+    /* height: 200vh; */
+}
+
+.buffer {
+    position: absolute;
+    top: 100vh;
+    /* font-size: 200px; */
+    background-color: var(--background-color);
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    /* height: 610px; */
+    /* overflow-x: hidden; */
+    /* overflow-y: hidden; */
+    /* z-index: 80; */
+}
+
+.real-buffer {
+    height: 100vh;
 }
 
 .headline {
@@ -148,13 +179,15 @@ h1 {
 }
 
 .info {
-    width: 100%;
+    width: 90%;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     overflow-x: hidden;
+    overflow-y: hidden;
+    /* z-index: 100; */
 }
 
 .text {
@@ -183,4 +216,15 @@ h1 {
 
 #text2 {
     margin-top: 2rem;
+}
+
+.star {
+    text-align: center;
+    font-size: 2vw;
+
+    animation-name: pulse;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
 }
