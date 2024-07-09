@@ -33,10 +33,10 @@ h1 {
     height: 100vh;
     perspective: 1px;
     perspective-origin: center center;
+    position: relative;
     overflow-x: hidden;
     color: var(--foreground-color);
     background-color: var(--background-color);
-    position: relative;
 }
 
 #parallax {
@@ -59,7 +59,6 @@ h1 {
     background-image: url('images/layer01.png');
     transform: translate3d(0, -45px, .6px) scale(.5);
     background-size: cover;
-    /* max-width: 90vw; */
 }
 
 #layer-2 {
@@ -212,6 +211,7 @@ h1 {
 
 .image {
     width: 25%;
+    opacity: 0.7;
 }
 
 .image-text {
