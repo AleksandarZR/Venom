@@ -56,13 +56,13 @@ h1 {
 }
 
 #layer-1 {
-    background-image: url('/images/layer01.png');
+    background-image: url('./images/layer01.png');
     transform: translate3d(0, -45px, .6px) scale(.5);
     background-size: cover;
 }
 
 #layer-2 {
-    background-image: url('images/layer02.png');
+    background-image: url('./images/layer02.png');
     transform: translate3d(0, -50px, .2px) scale(.5);
     background-position: center left;
     background-size: auto;
