@@ -101,7 +101,7 @@ h1 {
 }
 
 .buffer {
-    height: 100vh;
+    height: 200vh;
 }
 
 .content-sticked-to-first-layer {
@@ -194,14 +194,78 @@ h1 {
 }
 
 .star {
-    text-align: center;
-    font-size: 2vw;
+    /* text-align: center; */
+    font-size: 1.5rem;
 
-    animation-name: pulse;
-    animation-duration: 10s;
+    animation-name: star-pulse;
+    animation-duration: 5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-fill-mode: both;
+    transform-origin: center center;
+
+    position: absolute;
+    color: white;
+}
+
+#star1 {
+    top: 100px;
+    left: 180px;
+}
+
+#star2 {
+    top: 50px;
+    left: 800px;
+}
+
+#star3 {
+    top: 300px;
+    left: 200px;
+}
+
+#star4 {
+    top: 200px;
+    left: 700px;
+}
+
+#star5 {
+    top: 350px;
+    right: 250px;
+}
+
+#star6 {
+    top: 150px;
+   left: 500px;
+}
+
+#star7 {
+    top: 450px;
+    right: 450px;
+}
+
+@keyframes star-pulse {
+    0% {
+        text-shadow: rgb(255, 255, 255) 0px 0px 0px;
+        transform: scale(0.2);
+    }
+
+    25% {
+        text-shadow: rgb(255, 255, 255) 0px 0px 25px;
+    }
+
+    50% {
+        text-shadow: rgb(255, 255, 255) 1px 1px 50px;
+        transform: scale(1.2);
+    }
+
+    75% {
+        text-shadow: rgb(255, 255, 255) 0px 0px 25px;
+    }
+
+    100% {
+        text-shadow: rgb(255, 255, 255) 0px 0px 0px;
+        transform: scale(0.2);
+    }
 }
 
 .image-container {
@@ -232,25 +296,25 @@ h1 {
 
 @media(max-width: 620px) {
     .buffer {
-        height: 120vh;
+        height: 220vh;
     }
 }
 
 @media(max-width: 500px) {
     .buffer {
-        height: 150vh;
+        height: 250vh;
     }
 }
 
 @media(max-width: 410px) {
     .buffer {
-        height: 180vh;
+        height: 280vh;
     }
 }
 
 
 @media(max-width: 300px) {
     .buffer {
-        height: 185vh;
+        height: 285vh;
     }
 }
