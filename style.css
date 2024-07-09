@@ -70,21 +70,23 @@ h1 {
 
 #layer-3 {
     background-image: url('images/layer03.png');
-    transform: translate3d(0, -180px, .45px) scale(0.5);
+    transform: translate3d(0, -180px, .25px) scale(0.8);
     background-position: center right;
     background-size: auto;
+    right: 100px;
 }
 
 #layer-4 {
     background-image: url('images/layer04.png');
-    transform: translate3d(0, -120px, .25px) scale(.4);
+    transform: translate3d(0, -110px, .20px) scale(.5);
     background-position: center right;
     background-size: auto;
+    right: 70px;
 }
 
 #layer-5 {
     background-image: url('images/layer05.png');
-    transform: translate3d(0, -50px, .139px) scale(.3);
+    transform: translate3d(0, -50px, .13px) scale(.25);
     background-position: center right;
     background-size: auto;
 }
@@ -223,7 +225,7 @@ h1 {
 
 @media(max-width: 1366px) {
     .content-sticked-to-first-layer {
-        left: 0px;
+        /* left: 0px; */
     }
 }
 
@@ -239,9 +241,9 @@ h1 {
     }
 }
 
-@media(max-width: 400px) {
+@media(max-width: 410px) {
     .buffer {
-        height: 170vh;
+        height: 180vh;
     }
 }
 
