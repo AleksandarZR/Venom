@@ -292,6 +292,11 @@ h1 {
     .content-sticked-to-first-layer {
         /* left: 0px; */
     }
+
+
+    .buffer {
+        height: 210vh;
+    }
 }
 
 @media(max-width: 620px) {
