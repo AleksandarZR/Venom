@@ -86,9 +86,10 @@ h1 {
 
 #layer-5 {
     background-image: url('images/layer05.png');
-    transform: translate3d(0, -50px, .13px) scale(.25);
+    transform: translate3d(0, -10px, .13px) scale(.2);
     background-position: center right;
     background-size: auto;
+    /* left: 100px; */
 }
 
 #layer-99 {
