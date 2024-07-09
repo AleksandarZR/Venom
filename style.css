@@ -127,7 +127,7 @@ h1 {
 
 #layer-2 {
     background-image: url('images/layer02.png');
-    transform: translate3d(0, -150px, .2px) scale(.5);
+    transform: translate3d(0, -50px, .2px) scale(.5);
     background-position: center left;
     background-size: auto;
     top: 100;
@@ -207,7 +207,7 @@ h1 {
     line-height: 2.5rem;
     text-align: justify;
     text-justify: inter-word;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 #text1 {
