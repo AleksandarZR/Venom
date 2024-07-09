@@ -69,7 +69,7 @@ h1 {
 }
 
 #layer-3 {
-    background-image: url("images/layer03.png");
+    background-image: url("./images/layer03.png");
     transform: translate3d(0, -180px, .25px) scale(0.8);
     background-position: center right;
     background-size: auto;
@@ -77,7 +77,7 @@ h1 {
 }
 
 #layer-4 {
-    background-image: url('images/layer04.png');
+    background-image: url('./images/layer04.png');
     transform: translate3d(0, -110px, .20px) scale(.5);
     background-position: center right;
     background-size: auto;
@@ -85,7 +85,7 @@ h1 {
 }
 
 #layer-5 {
-    background-image: url('images/layer05.png');
+    background-image: url('./images/layer05.png');
     transform: translate3d(0, -10px, .13px) scale(.2);
     background-position: center right;
     background-size: auto;
@@ -93,7 +93,7 @@ h1 {
 }
 
 #layer-99 {
-    background-image: url('images/layer99.jpg');
+    background-image: url('./images/layer99.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
